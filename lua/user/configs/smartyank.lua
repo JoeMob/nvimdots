@@ -1,0 +1,5 @@
+return {
+	clipboard = {
+		enabled = false,
+	},
+}
