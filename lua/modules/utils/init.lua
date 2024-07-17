@@ -63,7 +63,7 @@ local function init_palette()
 				flamingo = "#DD7878",
 				mauve = "#CBA6F7",
 				pink = "#F5C2E7",
-				red = "#E95678",
+				red = "#FF0000",
 				maroon = "#B33076",
 				peach = "#FF8700",
 				yellow = "#F7BB3B",
@@ -232,7 +232,7 @@ end
 function M.gen_alpha_hl()
 	local colors = M.get_palette()
 
-	set_global_hl("AlphaHeader", colors.blue)
+	set_global_hl("AlphaHeader", colors.red)
 	set_global_hl("AlphaButtons", colors.green)
 	set_global_hl("AlphaShortcut", colors.pink, nil, true)
 	set_global_hl("AlphaFooter", colors.yellow)
