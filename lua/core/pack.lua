@@ -83,6 +83,7 @@ function Lazy:load_lazy()
 			colorscheme = { settings.colorscheme },
 		},
 		ui = {
+			backdrop = 100,
 			-- a number <1 is a percentage., >1 is a fixed size
 			size = { width = 0.88, height = 0.8 },
 			wrap = true, -- wrap the lines in the ui
