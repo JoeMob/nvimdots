@@ -1,15 +1,21 @@
 return {
+	defaults = {
+		mappings = {
+			n = {
+				["q"] = "close",
+			},
+		},
+	},
 	pickers = {
 		find_files = {
 			find_command = {
 				"rg",
 				"-uu",
 				"--files",
-				"--no-heading",
-				"--with-filename",
-				"--line-number",
-				"--column",
-				"--smart-case",
+				"--color",
+				"never",
+				"--no-ignore",
+				"--hidden",
 			},
 		},
 	},
