@@ -20,7 +20,6 @@ settings["colorscheme"] = "catppuccin"
 -- settings["colorscheme"] = "catppuccin-latte"
 
 settings["disabled_plugins"] = {
-	-- "hiphish/rainbow-delimiters.nvim",
 	"michaelb/sniprun",
 	"rainbowhxch/accelerated-jk.nvim",
 	"karb94/neoscroll.nvim",
