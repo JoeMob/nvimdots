@@ -24,6 +24,7 @@ settings["disabled_plugins"] = {
 	"michaelb/sniprun",
 	"rainbowhxch/accelerated-jk.nvim",
 	"karb94/neoscroll.nvim",
+	"mfussenegger/nvim-dap",
 }
 
 settings["dashboard_image"] = function()
