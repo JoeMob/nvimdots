@@ -3,6 +3,7 @@ return {
 		mappings = {
 			n = {
 				["q"] = "close",
+				["<esc>"] = false,
 			},
 		},
 	},
