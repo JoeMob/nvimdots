@@ -2,6 +2,8 @@ local bind = require("keymap.bind")
 local map_callback = bind.map_callback
 local map_cr = bind.map_cr
 local mappings = {}
+local M = require("modules.configs.completion.formatting")
+local opts = { pattern = "*", timeout = require("core.settings").format_timeout }
 
 -- Place global keymaps here.
 mappings["plug_map"] = {}
@@ -14,13 +16,19 @@ mappings["lsp"] = function(buf)
 		-- Example
 		["n|K"] = map_cr("Lspsaga hover_doc"):with_buffer(buf):with_desc("lsp: Show doc"),
 		["n|<A-S-f>"] = map_callback(function()
-				vim.lsp.buf.format()
+				M.format({
+					timeout_ms = opts.timeout,
+					filter = M.format_filter,
+				})
 			end)
 			:with_noremap()
 			:with_silent()
 			:with_desc("formatter: Format code"),
 		["i|<A-S-f>"] = map_callback(function()
-				vim.lsp.buf.format()
+				M.format({
+					timeout_ms = opts.timeout,
+					filter = M.format_filter,
+				})
 			end)
 			:with_noremap()
 			:with_silent()
