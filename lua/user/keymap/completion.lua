@@ -25,6 +25,7 @@ mappings["lsp"] = function(buf)
 			:with_silent()
 			:with_desc("formatter: Format code"),
 		["i|<A-S-f>"] = map_callback(function()
+				vim.api.nvim_input("<Esc>l")
 				M.format({
 					timeout_ms = opts.timeout,
 					filter = M.format_filter,
