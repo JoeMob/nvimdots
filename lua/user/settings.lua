@@ -2,7 +2,7 @@
 local settings = {}
 
 -- Examples
-settings["use_ssh"] = true
+settings["use_ssh"] = false
 
 settings["use_copilot"] = false
 
@@ -54,5 +54,13 @@ settings["dashboard_image"] = function()
 		[[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
 	}
 end
+
+settings["lsp_deps"] = {
+	"sqls",
+}
+
+settings["treesitter_deps"] = {
+	"sql",
+}
 
 return settings
