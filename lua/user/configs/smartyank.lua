@@ -1,5 +1,0 @@
-return {
-	clipboard = {
-		enabled = false,
-	},
-}
