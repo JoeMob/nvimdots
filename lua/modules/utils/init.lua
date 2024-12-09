@@ -248,7 +248,7 @@ end
 function M.gen_alpha_hl()
 	local colors = M.get_palette()
 
-	set_global_hl("AlphaHeader", colors.blue)
+	set_global_hl("AlphaHeader", colors.red)
 	set_global_hl("AlphaButtons", colors.green)
 	set_global_hl("AlphaShortcut", colors.pink, nil, true)
 	set_global_hl("AlphaFooter", colors.yellow)
