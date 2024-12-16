@@ -276,7 +276,6 @@ else
 fi
 
 cd "${DEST_DIR}" || return
-execute "cp" "-fRpP" "${DEST_DIR}/lua/user_template/" "${DEST_DIR}/lua/user"
 
 if [[ "${USE_SSH}" -eq "0" ]]; then
 	info "Changing default fetching method to HTTPS..."
