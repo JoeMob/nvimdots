@@ -1,5 +1,10 @@
 local editor = {}
 
+editor["shortcuts/no-neck-pain.nvim"] = {
+	lazy = true,
+	event = "BufEnter",
+	config = require("editor.no-neck-pain"),
+}
 editor["olimorris/persisted.nvim"] = {
 	lazy = true,
 	cmd = {
