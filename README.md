@@ -42,7 +42,7 @@
 
 ## 🪷 Introduction
 
-This repo hosts our [Neovim](https://neovim.io/) configuration for Linux [(with NixOS support)](#nixos-support), macOS, and Windows. `init.lua` is the config entry point.
+This repo hosts my [Neovim](https://neovim.io/) configuration forked from [ayamir](https://github.com/ayamir) for Linux [(with NixOS support)](#nixos-support), macOS, and Windows. `init.lua` is the config entry point.
 
 Branch info:
 
